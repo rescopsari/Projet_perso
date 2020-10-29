@@ -13,7 +13,7 @@ class Neural_Network(object):
         
     self.inputSize = 2 
     self.outputSize = 1 
-    self.hiddenSize = 3 
+    self.hiddenSize = 40 
 
     self.W1 = np.random.randn(self.inputSize, self.hiddenSize) 
     self.W2 = np.random.randn(self.hiddenSize, self.outputSize)
@@ -63,7 +63,7 @@ class Neural_Network(object):
 
 NN = Neural_Network()
 
-for i in range(1000):
+for i in range(1):
     print("# " + str(i) + "\n")
     print("Valeurs d'entrées: \n" + str(X))
     print("Sortie actuelle: \n" + str(y))
